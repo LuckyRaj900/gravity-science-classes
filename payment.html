@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Razorpay, UPI, card and net banking payment system for Gravity Science Classes.">
+  <title>Payments | Gravity Science Classes</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<main>
+  <section class="page-hero">
+    <div class="section-inner">
+      <span class="eyebrow">Payment System</span>
+      <h1>Course purchase and fee collection.</h1>
+      <p>Razorpay-ready interface for UPI, debit cards, credit cards, net banking, payment history and invoice download.</p>
+    </div>
+  </section>
+  <section>
+    <div class="section-inner grid cols-2">
+      <form class="card form reveal">
+        <h2>Pay Course Fee</h2>
+        <label>Student Name<input value="Demo Student"></label>
+        <label>Course<select><option>Class 12 Science</option><option>JEE Main</option><option>NEET</option><option>Class 10 CBSE</option></select></label>
+        <label>Amount<input value="12000"></label>
+        <label>Payment Method<select><option>Razorpay Checkout</option><option>UPI</option><option>Debit/Credit Card</option><option>Net Banking</option></select></label>
+        <button type="button" class="btn primary" id="payNow">Pay Now</button>
+        <p id="paymentStatus"></p>
+      </form>
+      <div class="card reveal">
+        <span class="pill">Payment History</span>
+        <h2>Invoices and receipts.</h2>
+        <div class="grid">
+          <article class="card flat"><h3>INV-2026-001</h3><p>Class 12 Science · Rs. 12,000 · Paid via UPI</p><button class="btn small ghost">Download Invoice</button></article>
+          <article class="card flat"><h3>INV-2026-002</h3><p>NEET Mock Series · Rs. 3,000 · Paid via Card</p><button class="btn small ghost">Download Invoice</button></article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-inner">
+      <div class="section-head reveal"><div><span class="eyebrow">Integration Notes</span><h2>Production payment setup.</h2></div></div>
+      <div class="grid cols-3">
+        <article class="card reveal"><h3>Razorpay</h3><p>Create orders on your backend, open Razorpay Checkout on the client, then verify payment signatures server-side.</p></article>
+        <article class="card reveal"><h3>UPI and Cards</h3><p>Use Razorpay methods for UPI, debit cards, credit cards and net banking in one flow.</p></article>
+        <article class="card reveal"><h3>Invoices</h3><p>Generate downloadable PDFs after verified payment capture and store payment history per student.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>

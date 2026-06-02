@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Secure admin dashboard for uploads, students, tests, notifications, analytics and admissions.">
+  <title>Admin Dashboard | Gravity Science Classes</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<main>
+  <section class="page-hero">
+    <div class="section-inner">
+      <span class="eyebrow">Admin Panel</span>
+      <h1>Manage the complete learning platform.</h1>
+      <p>Upload lectures and notes, add courses, manage students, publish tests, send notifications, view analytics and handle admissions.</p>
+    </div>
+  </section>
+  <section>
+    <div class="section-inner dashboard">
+      <aside class="sidebar">
+        <a class="active" href="#">Overview</a>
+        <a href="#">Lectures</a>
+        <a href="#">Notes</a>
+        <a href="#">Courses</a>
+        <a href="#">Students</a>
+        <a href="#">Tests</a>
+        <a href="#">Admissions</a>
+        <a href="#">Analytics</a>
+      </aside>
+      <div class="grid cols-2">
+        <article class="card reveal"><span class="pill">Analytics</span><h3>642 active students</h3><p>18 new admissions this week.</p><div class="progress"><span style="--value:82%"></span></div></article>
+        <article class="card reveal"><span class="pill">Revenue</span><h3>Fee collection</h3><p>UPI, cards, net banking and Razorpay payment history.</p><a class="btn small primary" href="payment.html">Open Payments</a></article>
+        <article class="card form reveal">
+          <h3>Upload Lecture</h3>
+          <div class="admin-upload"><label>Video / YouTube thumbnail / PDF<input data-upload type="file" multiple accept="video/*,image/*,application/pdf"></label><div class="upload-preview">No file selected.</div></div>
+          <button class="btn primary">Publish Lecture</button>
+        </article>
+        <article class="card form reveal">
+          <h3>Add New Course</h3>
+          <label>Course Name<input placeholder="Class 12 Science"></label>
+          <label>Subjects<input placeholder="Physics, Chemistry, Biology"></label>
+          <label>Fee<input placeholder="Enter course fee"></label>
+          <button class="btn orange">Add Course</button>
+        </article>
+        <article class="card form reveal">
+          <h3>Manage Test</h3>
+          <label>Test Title<input placeholder="NEET Biology Mock"></label>
+          <label>Duration<select><option>30 minutes</option><option>60 minutes</option><option>180 minutes</option></select></label>
+          <button class="btn primary">Create Test</button>
+        </article>
+        <article class="card form reveal">
+          <h3>Send Notification</h3>
+          <label>Audience<select><option>All Students</option><option>Class 10</option><option>JEE Batch</option><option>NEET Batch</option></select></label>
+          <label>Message<textarea placeholder="New assignment uploaded."></textarea></label>
+          <button class="btn orange">Send</button>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>

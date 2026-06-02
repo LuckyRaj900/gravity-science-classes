@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact and admission forms for Gravity Science Classes.">
+  <title>Contact & Admission | Gravity Science Classes</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<main>
+  <section class="page-hero">
+    <div class="section-inner">
+      <span class="eyebrow">Contact & Admission</span>
+      <h1>Admissions, inquiries and demo class booking.</h1>
+      <p>Submit admission details through WhatsApp, ask a question, call, or visit the institute location.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner grid cols-2">
+      <form class="card form reveal" data-whatsapp-enroll>
+        <h2>Admission Form</h2>
+        <div class="form-row">
+          <label>Student Name<input name="studentName" required placeholder="Enter student name"></label>
+          <label>Phone<input name="phone" required type="tel" placeholder="Student mobile number"></label>
+        </div>
+        <div class="form-row">
+          <label>Class/Course<select name="course"><option>Class 9</option><option>Class 10</option><option>Class 11 Science</option><option>Class 12 Science</option><option>JEE</option><option>NEET</option></select></label>
+          <label>Board/Exam<select name="board"><option>CBSE</option><option>BSEB</option><option>JEE</option><option>NEET</option></select></label>
+        </div>
+        <label>Preferred Subject<select name="subject"><option>Physics</option><option>Chemistry</option><option>Biology</option><option>Mathematics</option><option>Complete Course</option></select></label>
+        <label>Message<textarea name="message" placeholder="I want to enroll for demo/admission."></textarea></label>
+        <button class="btn primary">Send Enrollment on WhatsApp</button>
+        <p data-status></p>
+      </form>
+
+      <form class="card form reveal" id="demo" data-demo>
+        <h2>Inquiry Form</h2>
+        <label>Name<input required></label>
+        <label>Email<input type="email"></label>
+        <label>Question<textarea placeholder="Ask about batch timings, fee, demo class or subjects"></textarea></label>
+        <button class="btn orange">Send Inquiry</button>
+        <p data-status></p>
+        <div class="cluster">
+          <a class="btn small ghost" href="tel:+919999999999">Call: +91 99999 99999</a>
+          <a class="btn small primary" href="https://wa.me/919999999999">WhatsApp</a>
+        </div>
+        <p>Email: gravityscience@example.com</p>
+        <p>Social: Facebook · Instagram · YouTube</p>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <iframe class="map reveal" title="Google Map" src="https://www.google.com/maps?q=Patna%20Bihar&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
